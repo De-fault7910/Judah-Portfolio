@@ -391,6 +391,22 @@
                 grid-template-columns: 1fr;
             }
         }
+        .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
     </style>
 </head>
 <body>
@@ -498,7 +514,37 @@
             </div>
         </div>
     </section>
+<div class="pitch-video">
+    <h3>My Elevator Pitch</h3>
+    <p>30-second introduction highlighting my data expertise, experience, and what I bring to the table.</p>
+    
+    <!-- Example: YouTube embed (replace VIDEO_ID with yours) -->
+    <div class="video-container">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE?rel=0&modestbranding=1&showinfo=0" 
+            title="Judah - Data Professional Elevator Pitch" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
+    <!-- Optional Vimeo example instead -->
+    <!--
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/watch?v=IhAye8rVuRk" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    -->
+</div>
     <!-- Footer -->
     <footer>
         <div class="container">
